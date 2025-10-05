@@ -1,6 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import { Share2, MessageSquare, ChevronRight } from "lucide-react";
+import { Share2, MessageSquare, ChevronRight, UploadCloud } from "lucide-react";
 import type { ReactNode } from "react";
 
 export function Header({children}: {children?: ReactNode}) {
@@ -30,6 +30,10 @@ export function Header({children}: {children?: ReactNode}) {
             <AvatarFallback>+3</AvatarFallback>
           </Avatar>
         </div>
+        <Button variant="outline" size="sm">
+          <UploadCloud className="mr-2 h-4 w-4" />
+          Backup to Drive
+        </Button>
         <Button variant="ghost" size="sm">
           <MessageSquare className="mr-2 h-4 w-4" />
           Comments
